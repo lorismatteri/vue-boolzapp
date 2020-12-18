@@ -62,7 +62,7 @@
                                 <img :src="userImage" alt="">
                                 <div class="name_access">
                                     <p>Nome utente</p>
-                                    <p>Ultimo accesso oggi alle</p>
+                                    <p id="access">Ultimo accesso oggi alle</p>
 
                                 </div>
 
@@ -74,9 +74,20 @@
 
                             </div>
                         </div>
-                        <div class="chat_content">
 
+                        <div class="chat_content">
+                            <div class="ricevuto">
+                                <div v-bind:class="rec">
+                                    <span>ciao</span>
+                                </div>
+                            </div>
+                            <div class="inviato">
+                                <div v-bind:class="send">
+                                    <span>datti fuoco</span>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="chat_text">
                             <i class="far fa-smile"></i>
                             <input type="text" name="" id="" placeholder="Scrivi un messaggio">

@@ -164,6 +164,10 @@ body {
     border-radius: 50%;
 }
 
+#access {
+    color: #919191
+}
+
 .contact_icons {
     height: 100%;
     width: 50%;
@@ -177,6 +181,29 @@ body {
     height: 90%;
     background-image: url('../img/mine.jpg');
     overflow-y: auto;
+}
+
+.ricevuto {
+    display: flex;
+}
+
+.mess_ric {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.inviato {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mess_send {
+    background-color: #DCF8C6;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
 }
 
 .chat_text {
