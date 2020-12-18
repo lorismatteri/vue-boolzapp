@@ -8,3 +8,88 @@ body {
     font-family: 'Roboto', 'sans-serif';
     background-color: aqua;
 }
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.wrapper_top {
+    height: 20%;
+    width: 100%;
+    background-color: green;
+}
+
+.wrapper_bottom {
+    height: 80%;
+    width: 100%;
+    background-color: grey
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 70%;
+    background-color: aquamarine;
+}
+
+/* Sezione Sidebar */
+.sidebar {
+    background-color: bisque;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.side_head {
+    min-height: 10%;
+    width: 100%;
+}
+
+.banner {
+    background-color: deepskyblue;
+    height: 10%;
+    width: 100%;
+}
+
+#search_contact {
+    margin: 0.5rem;
+}
+
+.contacts {
+    overflow-y: scroll;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sezione Chat */
+.chat {
+    background-color: cornflowerblue;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat_head {
+    min-height: 10%;
+    width: 100%;
+    background-color: bisque;
+}
+
+.chat_content {
+    width: 100%;
+    height: 80%;
+    background-image: url('../img/mine.jpg');
+}
+
+.chat_text textarea {
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    margin: 0.5rem;
+}
