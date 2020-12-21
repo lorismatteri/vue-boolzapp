@@ -89,16 +89,11 @@
 
                         <!-- Chat -->
                         <div class="chat_content">
-                            <div class="ricevuto">
-                                <div v-bind:class="rec">
-                                    <span>ciao</span>
-                                </div>
-                            </div>
-                            <div class="inviato">
-                                <div v-bind:class="send">
-                                    <span>datti fuoco</span>
-                                </div>
-                            </div>
+                            <ul>
+                                <li v-bind:class="rec">ciao</li>
+                                <li v-bind:class="send">datti fuoco</li>
+                            </ul>
+                            
                         </div>
 
                         <!-- Scrittura messaggi -->

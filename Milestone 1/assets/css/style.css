@@ -183,11 +183,15 @@ body {
     overflow-y: auto;
 }
 
-.ricevuto {
+.chat_content ul {
+    list-style: none;
     display: flex;
+    flex-direction: column;
 }
 
-.mess_ric {
+.ricevuto {
+    max-width: 50%;
+    align-self: flex-start;
     background-color: white;
     border-radius: 1rem;
     padding: 1rem;
@@ -195,19 +199,17 @@ body {
 }
 
 .inviato {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.mess_send {
+    max-width: 50%;
+    align-self: flex-end;
     background-color: #DCF8C6;
     border-radius: 1rem;
     padding: 1rem;
     margin: 2rem;
 }
 
+
 .chat_text {
-    background-color: lightgray;
+    background-color: #EDEDED;
     display: flex;
     align-items: center;
 }

@@ -2,8 +2,8 @@ let app = new Vue ({
     el: '#app',
     data: {
         userImage: './assets/img/avatar_io.jpg',
-        send: 'mess_send',
-        rec: 'mess_ric',
+        send: 'ricevuto',
+        rec: 'inviato',
         contacts: [
             {
                 name: 'Michele',
