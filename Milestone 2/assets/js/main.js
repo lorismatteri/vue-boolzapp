@@ -8,7 +8,7 @@ let app = new Vue ({
             {
                 name: 'Michele',
                 avatar: './assets/img/avatar_1.jpg',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
@@ -27,10 +27,10 @@ let app = new Vue ({
                     }
                 ],
             },
-            /* {
+            {
                 name: 'Fabio',
                 avatar: './assets/img/avatar_2.jpg',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         date: '20/03/2020 16:30:00',
@@ -53,7 +53,7 @@ let app = new Vue ({
             {
                 name: 'Samuele',
                 avatar: './assets/img/avatar_3.jpg',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         date: '20/03/2020 16:30:00',
@@ -72,10 +72,13 @@ let app = new Vue ({
                     }
                 ],
                 
-            } */
+            }
         ]
     },
     methods: {
-        
+        selected: function(){
+            this.visible = true;
+            console.log(this.visible);
+        }
     }
 })
