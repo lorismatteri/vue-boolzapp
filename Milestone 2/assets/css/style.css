@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.wrapper_top {
+    height: 10%;
+    width: 100%;
+    background-color: #009688;
+}
+
+.wrapper_bottom {
+    height: 90%;
+    width: 100%;
+    background-color: #D7DBD7
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 80%;
+    background-color: aquamarine;
+}
+
+/* Sezione Sidebar */
+.sidebar {
+    background-color: #EDEDED;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.side_head {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 45%;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.icons {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons i, .contact_icons i {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: #919191;
+}
+
+.banner {
+    background-color: #8EDAFC;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.not_icon {
+    width: 100%;
+    background-color: white;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.not_icon i {
+    color: #8EDAFC;
+    font-size: 1.5rem;
+}
+
+.banner_right a {
+    color:#919191;
+}
+
+#search_contact {
+    margin: 0.5rem;
+    border-radius: 1rem;
+    border: 0;
+    padding: 0.5rem 1rem;
+}
+
+.contacts {
+    overflow-y: auto;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.contacts ul {
+    list-style: none;
+}
+
+.contacts ul li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #919191;
+}
+
+.contacts ul li img {
+    width: 22.5%;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+/* Sezione Chat */
+.chat {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat_head {
+    height: 10%;
+    width: 100%;
+    background-color: #EDEDED;
+    border-left: 1px solid #919191;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_image {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.contact_image img {
+    width: 15%;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+#access {
+    color: #919191
+}
+
+.contact_icons {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chat_content {
+    width: 100%;
+    height: 90%;
+    background-image: url('../img/mine.jpg');
+    overflow-y: auto;
+}
+
+.chat_content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.ricevuto {
+    max-width: 50%;
+    align-self: flex-start;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.inviato {
+    max-width: 50%;
+    align-self: flex-end;
+    background-color: #DCF8C6;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+.chat_text {
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+}
+
+.chat_text i {
+    font-size: 2rem;
+    color: #919191;
+    padding: 1rem;
+}
+
+.chat_text input {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem 1.5rem;
+    border: 0;
+    border-radius: 1rem;
+}
