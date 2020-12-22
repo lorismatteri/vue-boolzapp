@@ -110,6 +110,7 @@ body {
     border-radius: 1rem;
     border: 0;
     padding: 0.5rem 1rem;
+    outline: 0;
 }
 
 .contacts {
@@ -230,4 +231,9 @@ body {
     padding: 1rem 1.5rem;
     border: 0;
     border-radius: 1rem;
+    outline: 0;
+}
+
+.chat_text input:focus, #search_contact:focus {
+    box-shadow: inset 0 0 5px rgba(0, 150, 136, 0.5);
 }
